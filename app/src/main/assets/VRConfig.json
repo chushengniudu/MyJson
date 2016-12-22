@@ -1,0 +1,48 @@
+{
+	"success": true,
+	"root": [
+		{
+			"id": "100",
+			"type": "bpsVideo",
+			"icon": "",
+			"assetURL" : "vr.mp4",
+			"pid": null,
+			"canvasWidth": 4096,
+			"canvasHeight": 2048,
+			"points": [
+                {
+                    "name": "VR-Back",
+                    "type": "type3",
+                    "posX": 2048,
+                    "posY": 256,
+                    "goToId": "VR-Back"
+                },
+				{
+					"name": "main",
+					"type": "type1",
+					"posX": 3940,
+					"posY": 900,
+					"goToId": "101"
+				}
+			]
+		},
+        {
+             "id": "101",
+             "type": "bppVideo",
+             "icon": "",
+             "assetURL": "main.mp4",
+             "pid": "100",
+             "canvasWidth": 1920,
+             "canvasHeight": 1080,
+             "points": [
+                    {
+                        "name": "return",
+                        "type": "type3",
+                        "posX": 960,
+                        "posY": 690,
+                        "goToId": "100"
+                    }
+             ]
+        }
+	]
+}
